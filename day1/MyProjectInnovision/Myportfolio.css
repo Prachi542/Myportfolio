@@ -1,0 +1,113 @@
+
+/* GENERAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0984e3;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* College Name Styling */
+#college-name {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#college-name img {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* FRAMES */
+.frame {
+    display: none;
+    height: calc(100vh - 80px);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.active {
+    display: flex;
+}
+
+/* COLORS FOR FRAMES */
+.frame1 { background-color: #f8b400; color: white; }
+.frame2 { background-color: #00b894; color: white; }
+.frame3 { background-color: #e17055; color: white; }
+
+/* HEADINGS & PARAGRAPHS */
+h1, h2 { margin-bottom: 15px; }
+p { margin: 5px 0; }
+
+/* BUTTONS */
+button {
+    margin: 10px 5px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #636e72;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2d3436;
+}
+
+/* PROFILE PICTURE */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0984e3;
+    color: white;
+    font-size: 14px;
+}

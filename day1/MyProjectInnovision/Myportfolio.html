@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Kumari Portfolio</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="Myportfolio.css">
+</head>
+<body>
+
+    <!-- HEADER / NAV -->
+    <nav>
+        <div id="college-name">
+            <img width="50px" id="college-logo" src="innovision.jpg" alt="SMIT College Logo">
+            <span>Sikkim Manipal Institute of Technology</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showFrame('frame1')">Home</a></li>
+            <li><a href="#" onclick="showFrame('frame2')">About</a></li>
+            <li><a href="#" onclick="showFrame('frame3')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- FRAME 1: HOME -->
+    <div id="frame1" class="frame active frame1">
+        <h1>Welcome!</h1>
+        <div class="profile-container">
+            <img src="sakshi.jpg" alt="Sakshi Kumari" class="profile-pic">
+        </div>
+        <p>Hi, I am <strong>Sakshi Kumari</strong></p>
+        <p>1st Year, B.Tech (CSE)</p>
+        <button onclick="showFrame('frame2')">About Me</button>
+        <button onclick="showFrame('frame3')">Contact Info</button>
+        <button id="welcome-btn">Click for Welcome Message</button>
+    </div>
+
+    <!-- FRAME 2: ABOUT -->
+    <div id="frame2" class="frame frame2">
+        <h2>About Me</h2>
+        <p><strong>Hobbies:</strong> Coding, Singing, Reading</p>
+        <p><strong>Year:</strong> 1st</p>
+        <p><strong>Course:</strong> B.Tech (CSE)</p>
+        <button onclick="showFrame('frame1')">Back to Home</button>
+        <button onclick="showFrame('frame3')">Go to Contact</button>
+    </div>
+
+    <!-- FRAME 3: CONTACT / ACADEMIC INFO -->
+    <div id="frame3" class="frame frame3">
+        <h2>Contact / Academic Info</h2>
+        <p><strong>Roll No:</strong> 09</p>
+        <p><strong>Registration No:</strong> 202500138</p>
+        <p><strong>Email:</strong> sakshi@email.com</p>
+        <button onclick="showFrame('frame1')">Back to Home</button>
+        <button onclick="showFrame('frame2')">Back to About</button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 Sakshi Kumari | Email: sakshi@email.com
+    </footer>
+
+    <script>
+        function showFrame(frameId) {
+            document.querySelectorAll('.frame').forEach(f => f.classList.remove('active'));
+            document.getElementById(frameId).classList.add('active');
+        }
+
+        // Welcome alert button
+        document.getElementById("welcome-btn").addEventListener("click", function() {
+            alert("Welcome to my portfolio! I am Sakshi Kumari.");
+        });
+    </script>
+
+</body>
+</html>
